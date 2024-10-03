@@ -1,12 +1,13 @@
 name: Build and Upload Jar
 
 on:
-  push:
-    branches:
-      - folia-patches
-  pull_request:
-    branches:
-      - folia-patches
+  workflow_dispatch:
+    push:
+      branches:
+        - folia-patches
+    pull_request:
+      branches:
+        - folia-patches
 
 jobs:
   build:
